@@ -1,0 +1,14 @@
+body{
+    background: url(/images/img_fjords.jpg) no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    color : #000000;
+    text-align : center;
+    font-family: "SIMPSON";
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+}

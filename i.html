@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Create a New Account</h1>
+    <form>
+        <table>
+            <tr>
+                <td>City/Town :</td>
+                <td>{this.props.town}</td>
+                <br>
+            </tr>
+            <tr>
+                <td>Sunrise :</td>
+                <td>{JSON.stringify(new Date(this.props.sunrise * 1000))}</td>
+                <br>
+            </tr>
+            <tr>
+                <td>SunSet :</td>
+                <td>{JSON.stringify(new Date(this.props.sunset * 1000))}</td>
+                <br>
+            </tr>
+            <tr>
+                <td>Sky :</td>
+                <td>{this.props.weather.main}<br>
+            </tr>
+            <tr>
+                <td>Sky description :</td>
+                <td>{this.props.weather.description}<br>
+            </tr>
+            <tr>
+                <td>Temperature :</td>
+                <td>{parseFloat((this.props.weather.temperature - 273).toFixed(2))} C<br>
+            </tr>
+            <tr>
+                <td>Temperature :</td>
+                <td>{parseFloat((this.props.weather.temp_max - 273).toFixed(2))} C<br>
+            </tr>
+            <tr>
+                <td>Temperature :</td>
+                <td>{parseFloat((this.props.weather.temp_mi - 273).toFixed(2))} C<br>
+            </tr>
+            <tr>
+                <td>Wind speed :</td>
+                <td>{this.props.weather.wind_speed} m/s<br>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
